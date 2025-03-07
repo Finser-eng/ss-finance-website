@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Finance - Smart Solutions for a Strong Future</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SS Finance</h1>
+        <button onclick="openForm()">Contact Us</button>
+    </header>
+
+    <section>
+        <h2>Smart Solutions for a Strong Future</h2>
+        <p>Providing seamless Loans, Finance & Insurance services for your peace of mind.</p>
+    </section>
+
+    <div class="services">
+        <div class="service"><h3>Life Insurance</h3><p>Secure your family's future.</p></div>
+        <div class="service"><h3>Motor Insurance</h3><p>Protect your vehicle.</p></div>
+        <div class="service"><h3>Health Insurance</h3><p>Ensure your well-being.</p></div>
+        <div class="service"><h3>Non-Motor Insurance</h3><p>Coverage for businesses and property.</p></div>
+        <div class="service"><h3>Loans for Growth</h3><p>Achieve financial goals.</p></div>
+    </div>
+
+    <div id="contactForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactFormElement">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <input type="text" placeholder="Your Location" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="Life Insurance">Life Insurance</option>
+                    <option value="Motor Insurance">Motor Insurance</option>
+                    <option value="Health Insurance">Health Insurance</option>
+                    <option value="Non-Motor Insurance">Non-Motor Insurance</option>
+                    <option value="Loans">Loans</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmationMessage" style="display: none;">Your query has been noted. Our manager will contact you shortly.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
